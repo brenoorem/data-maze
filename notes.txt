@@ -10,3 +10,76 @@ mochila.h
 
 arquivo.c
 arquivo.h
+
+
+Passo 1 - Ler o arquivo .txt
+    - fopen(), fgets(), fscanf() e fclose()
+    - transformar isso numa matriz como: char labirinto[30][10] ou char labirinto[300];
+
+Passo 2 - Encontrar o personagem (P) e a saída (S)
+    - descobrir:
+        linha inicial
+        coluna inicial
+        linha da saída
+        coluna da saída
+
+Passo 3 - Criar a Pilha
+    - guardar o caminho percorrido
+    - funções principais:
+        push()
+        pop()
+        top()
+        isEmpty()
+
+Passo 4 - Criar a Lista da mochila ✅
+    - armazenar tesouros ordenados
+    - funções principais:
+        libera_mochila()
+        tamanho_mochila()
+        insere_mochila_ordenado()
+        remove_inicio_mochila()
+        exibe_elementos_mochila()
+
+Passo 5 - Testar tesouro e armadilha isoladamente
+    - faça testes manuais tipo:
+        inserir 50
+        inserir 10
+        inserir 80
+        armadilha remove 10
+
+Passo 6 - Implementar o Backtracking
+    - achar a saída
+    - marcar visitados
+    - tentar movimentos
+    - voltar quando necessário
+
+Passo 7 - Integrar com tesouro e armadilha
+    se encontrar:
+        T → sorteia tesouro e insere
+        A → remove primeiro da mochila
+
+Passo 8 - Mostrar o labirinto passo a passo
+    visualização ASCII no terminal.
+        
+        ########
+        #P  T S#
+        # ##A ##
+        ########
+
+        Mochila:
+        10 -> 40 -> 90
+        Total: 140
+
+Passo 9 - Salvar a solução em arquivo
+    gravar:
+        caminho correto
+        solução final
+    em:
+        saida.txt
+
+Passo 10 - Tratamento de erros
+    exemplo:
+        arquivo não encontrado
+        mochila vazia
+        labirinto inválido
+        sem saída possível
