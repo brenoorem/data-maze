@@ -1,0 +1,16 @@
+INTEGRANTES DO PROJETO
+======================
+
+Nome: Breno Rosa Orem
+RA: 248079
+
+Nome: Fabiano Dantas de Souza
+RA: 248153
+
+Como Compilar: gcc main.c labirinto.c mochila.c arquivo.c -o labirinto
+Como Executar: ./labirinto.exe
+
+Projeto: O Labirinto de Dados
+Disciplina: Estrutura de Dados
+Professor: Luciano Freire
+Data: Maio de 2026
